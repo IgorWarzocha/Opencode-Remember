@@ -1,8 +1,10 @@
-# @howaboua/opencode-remember
+# Opencode Remember
 
 Semantic long-term memory plugin for OpenCode. SQLite + local embeddings.
 
 **Note**: This plugin prioritises speed and local-first operation using a lightweight embedding model. If you need sophisticated semantic understanding, look at enterprise solutions with larger models.
+
+![opencode-remember](https://github.com/user-attachments/assets/a96265ca-da7e-4335-b09b-542ae5a03fce)
 
 ## Install
 
