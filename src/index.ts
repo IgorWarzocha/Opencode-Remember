@@ -7,7 +7,6 @@
  * - scope: "global" | "project" | "both"
  */
 import type { Plugin } from "@opencode-ai/plugin"
-import { ensureModel } from "./embedder"
 import { getConfig } from "./config"
 import { getModelDir, getStorageContexts } from "./storage"
 import { createRememberTool } from "./remember"
@@ -23,7 +22,6 @@ export const RememberPlugin: Plugin = async ({ worktree, directory }) => {
   if (!config.enabled) return {}
 
   const modelDir = getModelDir()
-  await ensureModel(modelDir)
 
   const stores = getStorageContexts(root, config.scope)
   const ctx: PluginContext = { root, modelDir, stores, config }

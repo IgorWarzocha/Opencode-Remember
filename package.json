@@ -1,6 +1,6 @@
 {
   "name": "@howaboua/opencode-remember",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Semantic long-term memory for OpenCode with local embeddings",
   "main": "./dist/index.js",
